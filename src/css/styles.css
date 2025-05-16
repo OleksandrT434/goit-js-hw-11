@@ -7,12 +7,47 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+[type="text"]{
+  width: 272px;
+  height: 40px;
+  border-radius: 4px
+  ;font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #808080;
+  padding-left: 16px;
+  border: 1px solid #ccc;
+}
+
+[type="submit"]{
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  margin-left: 8px;
+}
+
+[type="text"]:hover{
+  border: #090909;
+}
+
+[type="submit"]:hover {
+  border: #6c8cff;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
